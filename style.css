@@ -1,0 +1,62 @@
+body {
+  background: #131b21;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+
+
+#Footer_group_1_,
+[id^=PinkFlowerGroup],
+[id^=BaseGroup] path,
+[id^=LeafGroup] path,
+path[id^=Stroke],
+g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^=Dots],
+[id^=Flourish] {
+  visibility: hidden;
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60vw;
+  max-width: 480px;
+  min-width: 220px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2rem;
+  color: #215F7E;
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  padding: 18px 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  z-index: 2;
+  min-height: 120px;
+  pointer-events: none;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  #message {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 12px 6px;
+    min-width: unset;
+    max-width: unset;
+  }
+}
